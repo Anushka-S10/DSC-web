@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <title>My Webpage</title>
+
+        <script>
+            function myFunction() {
+                var text = document.getElementById("string").value;
+                document.getElementById("input").innerHTML = text.split('').reverse().join('');
+            }
+        </script>
+        <!-- Build a web application that takes a string as an input and returns the output as the reverse of the input string. -->
+        <style>
+           body {
+                background-image: url("https://w.wallhaven.cc/full/43/wallhaven-438863.jpg");
+                opacity: 1;
+                padding-top: 70px;
+                font-size: 24px;
+                position: relative;
+            }
+            .reverse {
+                font-size: 42px;
+            }
+            .texts {
+                font-size: 30px;
+            }
+             .button {
+                background-color: #a16ceb; /* Green */
+                border: 1px solid whitesmoke;
+                border-radius: 12px;
+                color: white;
+                text-align: center;
+                font-size: 30px;
+                padding: 4px 15px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="form-group text-center"> 
+                <div class="reverse">  
+                    <p><strong>Reverse a string</strong></p>
+                </div><br> 
+                <input id="string"><br><br><br>
+                <div class="submit">
+                    <button class="button" type="button" onclick="myFunction()">Submit</button>
+                </div><br>
+                <div class="texts">  
+                    <p id="input"></p>
+                </div><br>
+            </div>
+        </div>
+    </body>
+
+</html>
